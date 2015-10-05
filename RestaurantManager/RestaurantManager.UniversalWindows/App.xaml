@@ -9,7 +9,7 @@
             <Setter Property="FontSize" Value="32" />
         </Style>
         <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontSize" Value="24" />
         </Style>
     </Application.Resources>
 </Application>

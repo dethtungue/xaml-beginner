@@ -18,12 +18,12 @@
             <ColumnDefinition Width=".5*" />
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="txtMainMenu" Grid.Row="0" Grid.Column="0
-                   " Text="Restaurant Menu" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="48" TextWrapping="WrapWholeWords"/>
+                   " Text="Restaurant Menu" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextWrapping="WrapWholeWords"/>
         <TextBlock x:Name="txtVersionID" Grid.Row="1" Grid.Column="0
                    " Text="Internal Test Version" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextWrapping="WrapWholeWords"/>
-        <TextBlock x:Name="txtGoToOrders" Grid.Row="2" Grid.Column="0
-                   " Text="**Go To Orders View**" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" TextWrapping="WrapWholeWords"/>
-        <TextBlock x:Name="txtSubmitOrder" Grid.Row="2" Grid.Column="1
-                   " Text="**Submit Order**" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" TextWrapping="WrapWholeWords"/>
+        <Button x:Name="cmdGoToOrders" Grid.Row="2" Grid.Column="0
+                   " Content="Go To Orders View" VerticalAlignment="Center" HorizontalAlignment="Center" Click="cmdGoToOrders_Click" />
+        <Button x:Name="cmdSubmitOrder" Grid.Row="2" Grid.Column="1
+                   " Content="Submit Order" VerticalAlignment="Center" HorizontalAlignment="Center" Click="cmdSubmitOrder_Click" />
     </Grid>
 </Page>

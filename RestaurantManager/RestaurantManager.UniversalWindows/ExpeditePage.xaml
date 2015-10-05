@@ -9,13 +9,18 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="9*" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <TextBlock x:Name="txtClearOrders" 
-                    Grid.Row="1" 
-                    Text="**Clear All Orders**" 
-                    VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" TextWrapping="WrapWholeWords"/>
+        <AppBar Name="barOrders" Grid.Row="0" >
+            <AppBarButton Content="Home" Icon="Home" x:Name="cmdHome" Click="cmdHome_Click" />
+        </AppBar>
+        <GridView Grid.Row="1" />
+        <Button x:Name="cmdClearOrders" 
+                    Grid.Row="2" 
+                    Content="Clear All Orders" 
+                    VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
     </Grid>
 </Page>

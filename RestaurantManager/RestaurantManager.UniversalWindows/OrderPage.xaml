@@ -20,13 +20,18 @@
             <ColumnDefinition Width=".25*" />
             <ColumnDefinition Width=".25*" />
         </Grid.ColumnDefinitions>
+        <AppBar Name="barOrders" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" >
+            <AppBarButton Content="Home" Icon="Home" x:Name="cmdHome" Click="cmdHome_Click" />
+        </AppBar>
         <TextBlock x:Name="txtSpecReqs" Grid.Row="1" Grid.Column="1
-                   " Text="Special Requests:" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="WrapWholeWords"/>
+                   " Text="Special Requests:" VerticalAlignment="Top" HorizontalAlignment="Left" />
         <TextBlock x:Name="txtOrderItems" Grid.Row="1" Grid.Column="2
-                   " Text="Order Items:" VerticalAlignment="Top" HorizontalAlignment="Left" TextWrapping="WrapWholeWords"/>
-        <TextBlock x:Name="txtAddOrders" Grid.Row="4" Grid.Column="0
-                   " Text="**Go To Orders View**" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" TextWrapping="WrapWholeWords"/>
-        <TextBlock x:Name="txtSubmitOrders" Grid.Row="4" Grid.Column="1
-                   " Text="**Submit Order**" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40" TextWrapping="WrapWholeWords"/>
+                   " Text="Order Items:" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <ListView Name="lstListView1" Grid.Row="2" Grid.Column="0"/>
+        <ListView Name="lstListView2" Grid.Row="2" Grid.Column="2"/>
+        <Button x:Name="txtAddOrders" Grid.Row="4" Grid.Column="0" 
+                Content="Go To Orders View" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button x:Name="txtSubmitOrders" Grid.Row="4" Grid.Column="1" 
+                Content="Submit Order" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" />
     </Grid>
 </Page>
