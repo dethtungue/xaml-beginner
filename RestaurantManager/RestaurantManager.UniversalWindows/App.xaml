@@ -3,13 +3,24 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
+    xmlns:data="using:RestaurantManager.Models"
     RequestedTheme="Dark">
     <Application.Resources>
+        <!--Universal data manager resource applied to entire app-->
+        <data:DataManager x:Key="DataManager"/>
+        <!--Button and Text Block styling to make font size uniform-->
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="32" />
         </Style>
         <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontSize" Value="32" />
+        </Style>
+        <!--For fun, added styles for Grid View Item and List View Items to make font size uniform-->
+        <Style TargetType="GridViewItem">
+            <Setter Property="FontSize" Value="28" />
+        </Style>
+        <Style TargetType="ListViewItem">
+            <Setter Property="FontSize" Value="28" />
         </Style>
     </Application.Resources>
 </Application>
